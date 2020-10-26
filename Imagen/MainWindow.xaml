@@ -1,0 +1,86 @@
+﻿<Window
+    x:Class="Imagen.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Imagen"
+    mc:Ignorable="d"
+    Icon="16.ico"
+    Title="Imagen"
+    Height="450"
+    Width="800">
+    <Grid>
+        <Image x:Name="ImagenImage"
+            HorizontalAlignment="Left"
+            Height="293"
+            Margin="35,51,0,0"
+               Source="picture1.jpg"
+            VerticalAlignment="Top"
+            Width="358" />
+        <Label
+            Content="Opacidad"
+            HorizontalAlignment="Left"
+            Margin="557,51,0,0"
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold" />
+        <RadioButton x:Name="Alta_Button"
+            Content="Alta"
+                     GroupName="grupo1"
+            HorizontalAlignment="Left"
+            Margin="557,93,0,0"
+            VerticalAlignment="Top"
+            Checked="Alta_Button_Checked" />
+        <RadioButton x:Name="Media_Button"
+            Content="Media"
+                     GroupName="grupo1"
+            HorizontalAlignment="Left"
+            Margin="557,113,0,0"
+            VerticalAlignment="Top"
+            Checked="Media_Button_Checked" />
+        <RadioButton x:Name="Baja_Button"
+            Content="Baja"
+            HorizontalAlignment="Left"
+                     GroupName="grupo1"
+            Margin="557,133,0,0"
+            VerticalAlignment="Top"
+            Checked="Baja_Button_Checked" />
+        <Label
+            Content="Ajuste"
+            HorizontalAlignment="Left"
+            Margin="556,227,0,0"
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold" />
+        <RadioButton x:Name="Relleno_Button"
+            Content="Relleno (Fill)"
+                     GroupName="grupo2"
+            HorizontalAlignment="Left"
+            Margin="556,269,0,0"
+            VerticalAlignment="Top"
+            Checked="Relleno_Button_Checked" />
+        <RadioButton x:Name="Uniforme_Button"
+            Content="Uniforme (Uniform)"
+                     GroupName="grupo2"
+            HorizontalAlignment="Left"
+            Margin="556,289,0,0"
+            VerticalAlignment="Top"
+            Checked="Uniforme_Button_Checked" />
+        <RadioButton x:Name="RellenoUniforme_Button"
+            Content="Relleno Uniforme (Uniform to fill)"
+            HorizontalAlignment="Left"
+                     GroupName="grupo2"
+            Margin="556,309,0,0"
+            VerticalAlignment="Top"
+            Checked="RellenoUniforme_Checked" />
+        <RadioButton x:Name="SinAjuste_Button"
+            Content="Sin ajuste (None)"
+            HorizontalAlignment="Left"
+            Margin="557,329,0,0"
+                     GroupName="grupo2"
+            VerticalAlignment="Top"
+            Checked="Sin_Ajuste_Checked" />
+
+    </Grid>
+</Window>
